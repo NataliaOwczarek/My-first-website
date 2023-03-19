@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ralewaywght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+
+    <link rel="stylesheet" href="../cms/style.css">
+    <title>SKN PARADYGMAT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+</head>
+<body>
+    <nav class="nav-top">   
+        <div class="brand">
+            <h1> SKN PARADYGMAT </h1>
+        </div>
+        <div class="nav-items">
+            <a href="../html/indeks.html">Strona główna</a>
+            <a href="../cms/profil.html" class="profile"><i class="ti ti-user"></i> <span>Użytkownik</span></a>
+            <a href="../cms/login-form.html" class="login"><i class="ti ti-logout"></i> <span>Wyloguj się</span></a>
+        </div>
+    </nav>
+    <div class="wrapper">
+    <div class="sidebar">
+        <nav class="nav-sidebar">
+            <div class="nav-items">
+            <a href="indeks.html"><i class="ti ti-chevron-right"></i> Posty</a>
+            <a href="users.html"><i class="ti ti-chevron-right"></i> Użytkownicy</a>
+        </div>
+        </nav>
+    </div>
+    <main>
+        <h1>Ststystyki wyświetleń strony w danym miesiącu</h1>
+        <div class="wrapper">
+            <div class="row">
+                <div class="chart"><canvas id="barChart"></canvas></div>
+
+                
+            </div>
+       
+        </div>
+    </main>
+</div>
+        <script>
+            new Chart("barChart", {
+              type: "bar",
+              data: {
+                 datasets: [{
+                    data: [710, 600, 800, 750, 780, 860, 900, 842, 790, 700, 650, 900],
+                    borderColor: '#36A2EB',
+                    backgroundColor: '#0BF005',
+                }],
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                },
+              options: {
+                legend: {display: false},
+                scales: {
+                  xAxes: [{ticks: {min: 0, max:20}}],
+                  yAxes: [{ticks: {min: 500, max:1000}}],
+                }
+              }
+            });
+        </script>
+    </main>
+</div>
+</body>
+</html>

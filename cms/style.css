@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.brand{
+    display: inline-block;
+    
+}
+/* nawigacja */
+.nav-top{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(231, 186, 232);
+    text-align: center;
+    z-index: 10;
+}
+
+.nav-top .nav-items{
+    text-align: right;
+    display: flex;
+}
+.nav-top .nav-items a{
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    transition: color .3s;
+}
+.nav-top .nav-items a:hover{
+    color: rgb(74, 6, 79);
+}
+
+.btn-profile span,
+.btn-login span{
+    display: none;
+}
+
+/* nawuigacja boczna */
+.nav-sidebar{
+    padding: 20px;
+}
+
+.nav-sidebar .nav-items{
+    display: block;
+}
+.nav-sidebar .nav-items a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(60, 9, 71);
+    transition: color .3s;
+}
+.nav-sidebar .nav-items a:hover{
+    color: rgb(75, 2, 86);
+}
+/* sidebar */
+.sidebar{
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    background-color: rgb(175, 209, 233);
+    
+    width: 20%;
+}
+main{
+    padding: 20px;
+    width: 80%;
+    /* height: 200vh; */
+}
+main h1{
+    margin-bottom: 5px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0;
+    /* padding: 20px; */
+}
+.box{
+    display: inline-block;
+    align-self: stretch;
+    width: 46%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #000;
+    font-size: 16%;
+}
+
+/* table */
+
+
+table.orders, table.posts{
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+}
+tr:nth-child(2n){
+    background-color: #eee;
+}
+
+table.orders th, table.posts th,
+table.orders td, table.posts td {
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+table.orders td:first-child, table.orders th:first-child
+{
+    border-left: none;
+    width: 10%;
+}
+
+table.posts td:first-child, table.posts th:first-child
+{
+    border-left: none;
+    width: 70%;
+}
+
+table.orders td:last-child, table.orders th:last-child{
+    border-right: none;
+    width: 10%;
+}
+
+table.orders tr:last-child
+table.posts tr:last-child {
+    border-bottom: none;
+    
+}
+
+
+/* buttons */
+
+.btn{
+    display: inline-block;
+    max-width: 200px;
+    cursor: pointer;
+    transition: all .3s;
+    border: none;
+    border-radius:4px;
+    text-decoration: none;
+    padding: 4px 8px;
+}
+.btn-profile span,
+.btn-login span{
+    display: none;
+}
+.btn-profile:hover,
+.btn-login:hover,
+.btn-edit:hover,
+.btn-send:hover{
+    background-color: #0a2;
+    color: #fff;
+}
+.btn-edit{
+    background-color: rgb(20, 205, 243);
+    color: #fff;
+}
+.btn-delete{
+    background-color: rgb(243, 65, 20);
+    color: #fff;
+}
+.btn-delete:hover{
+    background-color: rgb(170, 0, 0);
+    color: #fff;
+}
+
+/* profile */
+.profile-photo{
+    width: 20%;
+    padding: 10px;
+    /* background-color: #bbb; */
+}
+.profile-photo img{
+    width: 100%;
+    border: 3px solid #ddd;
+    border-radius: 16px;
+    padding: 8px;
+}
+.profile-info{
+    width: 80%;
+    padding: 20px;
+    font-size: 1rem;
+    /* background-color: #ddd; */
+}
+.profile-info h2{
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-left: 9px solid #ddd;
+}
+.profile-info .address{
+    color: #bbb;
+    padding-left: 32px;
+    border-left: 9px solid #ddd;
+}
+.profile-info p{
+    padding: 8px 16px;
+}
+.profile-info p i{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* reports */
+.chart{
+    width: 30%;
+    /* height: 400px; */
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #ddd;
+    display: inline-block;
+}
+/* staff */
+.staff {
+	margin: 60px auto;
+}
+.staff-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.worker {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	margin: 10px;
+}
+.worker .hero-bg {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+}
+.worker .hero-bg:hover {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.worker .hero-text {
+	padding: 4px 8px;
+	top: 90%;
+	width: 90%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.worker-first {
+	background-image: url("../zdjęcia/eko.jpg");
+}
+.worker-second {
+	background-image: url("../img/user-310807_640.png");
+}
+.worker-third {
+	background-image: url("../img/user-297566_640.png");
+}
+.worker-fourth {
+	background-image: url("../img/man-148582_640.png");
+}

@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "open sans", sans-serif;
+	margin-bottom: 5cm;
+}
+
+section {
+	scroll-margin-top: 80px;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* nawigacja */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgb(17, 2, 19);
+	background-position:top;
+	background-size: cover;
+	text-align: center;
+	z-index: 10;
+}
+.nav-items {
+	display: block;
+}
+.nav-items a {
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgb(212, 169, 221);
+	transition: color 0.3s;
+}
+.nav-items a:hover {
+	color: rgb(4, 89, 117);
+}
+
+/* header */
+.header {
+	position: flex;
+	height: 600px;
+	background-image: url("../zdjęcia/skntło.png");
+	background-size: cover;
+	background-position: center;
+	margin: auto;
+	display: block];
+}
+.hero-bg {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(92, 27, 102, 0.437);
+}
+.hero-text {
+	position:absolute;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.hero-text > h1 {
+	font-family: Roboto, serif;
+	font-size: 45px;
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+}
+.hero-text > h1 > p {
+	color: rgb(211, 154, 199);
+	text-align: center;
+	text-transform: uppercase;
+}
+.section-title {
+	margin: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+.projekty {
+	margin: 60px auto;
+}
+.projekty {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+.projekty {
+	display:flow-root;
+	width: 100%;
+}
+.projekty .hero-bg {
+	background-color: rgba(0, 0, 0, 0.447);
+}
+.projekty .hero-text a {
+	font-family: 'Aboreto', cursive;
+	font-size: larger;
+	color: #fff;
+}
+
+.projekty .hero-text a:hover {
+	font-family: 'Aboreto', cursive;
+	font-size: larger;
+	color: rgb(206, 100, 205);
+}
+.projekty .section-title {
+	text-transform: uppercase;
+	font-family: 'Aboreto', cursive;
+	color: rgb(53, 3, 56);
+	font-size:50px;
+}
+.pierwszy-projekty {
+	background-image: url("../zdjęcia/marks.jpg");
+}
+.drugi-projekty {
+	background-image: url("../zdjęcia/znaki1.webp");
+}
+.trzeci-projekty {
+	background-image: url("../zdjęcia/ekologia.webp");
+
+}
+.czwarty-projekty {
+	background-image: url("../zdjęcia/Bronisław_Wilkoszewski_–_Fabryka_Tow._Ak._Poznańskiego.jpg");
+}
+
+/* kontakt */
+.contact {
+	margin: 60px auto;
+	text-align: center;
+}
+.contact h3 {
+	margin: 20px 0;
+	text-transform: uppercase;
+	
+}
+.main-content {
+	display: flex;
+	justify-content: flex-start;
+	text-align:justify;
+	display:flow-root;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0 20px;
+	font-family: "open sans", sans-serif;
+
+  }
+.main-content h1{
+	margin: 60px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.parallax {
+	height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+  }
+.pierwszy-parallax{
+	background-image: url("../zdjęcia/wykład.jpg");
+}
+.drugi-parallax{
+	background-image: url("../zdjęcia/plur.jpg");
+}
+.trzeci-parallax{
+	background-image: url("../zdjęcia/eko.jpg");
+}
+
+.czwarty-parallax{
+	background-image: url("../zdjęcia/transf.jpg");
+}
+.parallax > .center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 200%;
+	word-spacing: 5mm;
+	letter-spacing: 2mm;
+	color: #ffffff;
+	text-shadow: 2px 2px 5px rgb(49, 49, 49);
+}
+section a.plik {
+	text-decoration: none;
+	background-color: rgb(62, 2, 67);
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 8px;
+}
+section a.plik:hover {
+	background-color: #101123;
+}
+/* kontakt */
+.contact {
+	margin: 60px auto;
+	text-align: center;
+}
+.contact h3 {
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+.contact-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-form {
+	width: 60%;
+}
+.contact-info {
+	width: 40%;
+}
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	font-size: 16px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+}
+.contact-form .btn {
+	max-width: 200px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.contact-form .btn:hover {
+	background-color: #0a2;
+	color: #fff;
+}
+/*tabela*/
+table.purpleHorizon {
+	font-family: "open sans", sans-serif, monospace;
+	border: 6px solid #8a5e8e;
+	background-color: #ddb1ec;
+	width: 600px;
+	text-align: center;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+
+  }
+  table.purpleHorizon td, table.purpleHorizon th {
+	border: 1px solid #745680;
+	padding: 5px 2px;
+  }
+  table.purpleHorizon tbody td {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+  }
+  table.purpleHorizon tr:nth-child(even) {
+	background: #a671ba;
+  }
+  table.purpleHorizon thead {
+	background: #a364b8;
+	border-bottom: 4px solid #845892;
+  }
+  table.purpleHorizon thead th {
+	font-size: 19px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	border-left: 2px solid #854a99;
+  }
+  table.purpleHorizon thead th:first-child {
+	border-left: none;
+  }
+  
+  table.purpleHorizon tfoot td {
+	font-size: 13px;
+  }
+  table.purpleHorizon tfoot .links {
+	text-align: right;
+  }
+  table.purpleHorizon tfoot .links a{
+	display: inline-block;
+	background: #792396;
+	color: #FFFFFF;
+	padding: 2px 8px;
+	border-radius: 5px;
+  }
+
+/* stopka */
+footer {
+	text-align: center;
+	background-color: rgb(22, 9, 29);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	
+}
+footer img{
+	display: inline-block;
+	max-width: 60px;
+}
